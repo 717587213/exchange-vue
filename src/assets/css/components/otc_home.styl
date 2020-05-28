@@ -1,0 +1,131 @@
+.m-main  {
+  .main-content{
+    .clickpointer{
+      cursor:pointer !important;
+      text-indent: 16px;
+    }
+    .pointer{
+      cursor:pointer !important;
+    }
+    .sellColor{
+      color:$sell-color !important;
+    }
+    .buyColor{
+      color:$buy-color !important;
+    }
+    .payment{
+      text-align:left !important;
+      padding-left:40px !important;
+    }
+    .turnov{
+      display:inline-block;
+      color:$white-color;
+      padding:0 5px;
+      height:24px;
+      line-height:24px;
+      background:$blue-font-color
+      border-radius:2px;
+      cursor:pointer;
+      opacity:0.8
+      &:hover{
+        opacity:1
+      }
+    }
+  // 推荐区
+  .recommend{
+    .recomm-content{
+      .hot-box{
+        margin:15px 12px 0 15px;
+        position:relative;
+        height:100px;
+        .portrait{
+          float:left;
+          margin-right:10px;
+          width:30px;
+          height:30px;
+          position:relative;
+          top:-4px;
+          cursor:pointer;
+           img{
+             width:30px;
+             height:30px;
+             border-radius:50%;
+
+           } 
+           i{
+             width:8px;
+             height:8px;
+             background:$blue-font-color;
+             position:absolute;
+             right: -2px; 
+             top:20px;
+             border-radius:50%;
+           }
+        }
+        .nickname{
+          font-size:14px;
+          display:inline-block;
+          margin-top:5px;
+          height:22px;
+          overflow:hidden;
+          cursor:pointer;
+          span{
+            font-size:12px;
+            position:relative;
+            top:-1px;
+            padding-left:5px;
+          }
+        }
+        .progress{
+          margin-top:10px;
+          font-size:12px;
+          color:$explain-font-color;
+          padding-left:5px;
+        }
+        .price{
+          margin-top:10px;
+          font-size:12px;
+          padding-left:5px;
+          span {
+            // font-size:12px;
+            color:$explain-font-color;
+          }
+        }
+        .turnov{
+          position:absolute;
+          right:0;
+          bottom:0;
+        }
+      }
+    }
+  }
+      /* 市场 */
+  .market {
+    .header ul li.header-more{
+      float:right;
+      margin-right:20px;
+    }
+    .mark-box {
+      tr {
+        td{
+          img {
+            display:inline-block;
+            vertical-align: middle;
+            margin-right:5px;
+            border-radius:50%;
+          }
+          &.busine{
+            cursor:pointer;
+          }
+          .business{
+            padding:5px;
+            background:$sell-color;
+            border-radius:2px;
+            cursor:pointer;
+          }
+        }
+      }
+    }
+  }
+}
+}

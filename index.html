@@ -1,0 +1,40 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="keyWords" content="比特币交易平台,比特币,BTC,比特币价格,比特币行情,USDT,莱特币,BCH,以太坊,ETH,以太经典">
+    <meta name="description" content="专业虚拟货币交易站,使莱特币LTC,以太坊ETH,BCH,以太经典(ETC),达世币DASH,瑞波XRP,BCH,PAY,BTG,OMG,EOS,RDN,SNT,KNC,MTL,QSP,RCN,AST,TNT,BCD,TNB等数字货币以比特币BTC,USDT进行交易！提供实时比特币价格,比特币行情.">
+    <!-- 忽略页面中的数字识别为电话号码 -->
+    <meta name="format-detection" content="text=no">
+    <!-- 忽略页面中的邮箱格式为邮箱 -->
+    <meta name="format-detection" content="password=no">
+    <script type="text/javascript" src="/static/charting_library/charting_library.min.js"></script>
+    <title></title>
+
+    <script type="text/javascript">
+      let host = location.host.split('.')[location.host.split('.').length - 2] + '.' + location.host.split('.')[location.host.split('.').length - 1]
+      window.setHost = function (test = '',custom) {
+        if (test === 'false') {
+          test = ''
+        }
+        let mainHost = custom ? custom + '.' : test + 'www.'
+        window.HOST_API = {
+          // 项目API接口域名地址：
+          ex_api: test + 'webapi.'+ host, // 公共接口，必填！（含币币交易）
+          co_api: test + 'coapi.'+ host, // 合约交易接口
+          otc_api: test + 'otcapi.'+ host, // 场外交易接口
+          // 如果做分站，且有多个分站，以下为各分站的访问地址
+          ex_pc_url: mainHost + host, // 币币交易PC
+          ex_h5_url: test + 'm.' + host, // 币币交易H5
+          otc_pc_url: test + 'otc.' + host, // 场外交易PC
+          otc_h5_url: test + 'motc.' + host, // 场外交易H5
+          co_pc_url: test + 'co.' + host, // 合约交易PC
+          co_h5_url: test + 'mco.' + host // 合约交易H5
+        }
+      }
+      let v = '版本：2018-08-04-18231-3.1.2.0'
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
